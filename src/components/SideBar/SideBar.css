@@ -1,0 +1,93 @@
+.sidebar {
+    min-height: 100vh;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #1E1F20;
+    color: #e0e0e0;
+    padding: 24px 16px;
+}
+
+.sidebar .icon {
+    font-size: 20px;
+}
+
+.sidebar .menu {
+    display: block;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.sidebar .menu-icon {
+  width: fit-content;
+  padding: 10px;
+  border-radius: 50%;
+  transition: all ease 0.2s;
+}
+
+.sidebar .menu-icon:hover {
+    background-color: #282A2C;
+}
+
+.sidebar .recent-icon {
+    font-size: 16px;
+}
+
+.sidebar .new-chat {
+    margin-top: 40px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px;
+    background-color: #1A1A1C;
+    border-radius: 50px;
+    color: #a6a6a6;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.sidebar .recent {
+    display: flex;
+    flex-direction: column;
+    animation: fadeIn 1.5s;
+}
+
+.sidebar .recent-title {
+    margin-top: 30px;
+    margin-bottom: 12px;
+    font-size: 16px; 
+}
+
+.sidebar .recent-entry {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-right: 24px;
+    cursor: pointer;
+    font-size: 14px; 
+    font-weight: 500;
+    color: #c7c6c6;
+    padding: 6px 10px;
+    border-radius: 50px;
+    transition: all ease 0.2s;
+}
+
+.sidebar .recent-entry:hover {
+    background-color: #282A2C;
+}
+
+.sidebar .bottombar {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.sidebar .bottom-item {
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    .sidebar {
+        display: none;
+    }
+}
